@@ -3,7 +3,8 @@
     --ff-main: 'Lato', sans-serif;
     --violet: rgb(178, 8, 245);
     --darkGrey: rgb(61, 60, 60);
-
+    --neonGreen:rgb(10, 247, 2);
+    --drkGreen: rgb(3, 146, 3);
 }
 
 body {
@@ -23,14 +24,26 @@ body {
     max-width: 33em;
     max-height: 25em;
     border-radius: 7px;
+    margin-top: 10em;
+}
+
+.timer__header--title {
+    margin-bottom: .5em;
 }
 
 h1 {
     font-family: var(--ff-accent);
-  
     color: orangered;
     margin: 0 auto;
     font-size: 2rem;
+    text-shadow: 2px 4px 4px rgba(245, 153, 78, 0.7)
+}
+
+.timer__header:hover,
+.timer__header:focus {
+    color: var(--drkGreen);
+    text-shadow: 2px 4px 4px rgba(10, 247, 2, 0.7);
+    transition: all 1s ease-in-out;
 }
 
 .timer__body {
@@ -61,6 +74,10 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+.p--fineprint {
+    font-size: .75rem;
 }
 
 .modal--background {
