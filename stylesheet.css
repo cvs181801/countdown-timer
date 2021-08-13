@@ -1,6 +1,7 @@
 :root {
     --ff-accent: 'Knewave', cursive;
     --ff-main: 'Lato', sans-serif;
+    --violet: rgb(178, 8, 245);
 }
 
 body {
@@ -16,15 +17,18 @@ body {
 
 .timer__header {
     background-color: white;
-    padding: .5em;
+    padding: 1.5em;
     max-width: 33em;
+    max-height: 25em;
+    border-radius: 7px;
 }
 
 h1 {
     font-family: var(--ff-accent);
-    /*color: transparent linear-gradient(270deg, #FF713B 0%, #FF895D, #FFA51D 100%) 0% 0% no-repeat padding-box; /*linear-gradient(#FF713B, #FFA51D);
-    opacity: 1; */
+  
     color: orangered;
+    margin: 0 auto;
+    font-size: 2rem;
 }
 
 .timer__body {
@@ -32,8 +36,38 @@ h1 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    font-family: var(--ff-main);
+    color: var(--violet);
+    font-size: 2rem;
+    margin: 0 auto;
+    
 }
 
 .timer__item {
     padding: .2em;
+}
+
+.modal {
+    color: white;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal--background {
+    position: relative;
+    color: white;
+    opacity: .8;
+    max-width: 33em;
+    max-height: 100vh;
+}
+
+.modal--background-inner {
+    background: transparent linear-gradient(270deg, #FF713B 0%, #FF895D, #FFA51D 100%) 0% 0% no-repeat padding-box; 
+    max-width: 33em;
+    max-height: 25em;
+    opacity: 1;
+
 }
