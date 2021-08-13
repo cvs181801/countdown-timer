@@ -1,0 +1,39 @@
+:root {
+    --ff-accent: 'Knewave', cursive;
+    --ff-main: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--ff-main);
+    background-image: url(/Users/casvalkyriespicer/Documents/GitHub/countdown-timer/pics/balloons.jpeg);
+    /*background-color: rgb(199, 241, 247);
+    background-blend-mode: multiply;
+    opacity: .8;*/
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+.timer__header {
+    background-color: white;
+    padding: .5em;
+    max-width: 33em;
+}
+
+h1 {
+    font-family: var(--ff-accent);
+    /*color: transparent linear-gradient(270deg, #FF713B 0%, #FF895D, #FFA51D 100%) 0% 0% no-repeat padding-box; /*linear-gradient(#FF713B, #FFA51D);
+    opacity: 1; */
+    color: orangered;
+}
+
+.timer__body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.timer__item {
+    padding: .2em;
+}
