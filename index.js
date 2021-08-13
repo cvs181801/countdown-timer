@@ -1,6 +1,10 @@
 //grab elements from DOM
 const header = document.querySelector(".timer__header");
 const titles = document.querySelectorAll("h1");
+const day = document.querySelector(".timer__day");
+const hour = document.querySelector(".timer__hour");
+const minute = document.querySelector(".timer__minute");
+const second = document.querySelector(".timer__second");
 
 //test area
 
@@ -34,6 +38,7 @@ function grandOpeningCounter(start, end) {
     hours = hours - (days * 24);
     minutes = minutes - (days * 24 * 60) - (hours * 60);
     seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
+   // day.textContent = 
     return `${days} : ${hours} : ${minutes} : ${seconds}`;
 }
 
