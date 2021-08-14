@@ -48,7 +48,6 @@ h1 {
     color: var(--violet);
     font-size: 2rem;
     margin: 0 auto;
-    
 }
 
 .timer__item {
@@ -62,7 +61,7 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(241, 241, 241, 0.7);
-   
+    
 }
 
 .hidden {
@@ -75,17 +74,25 @@ h1 {
 
 .modal--background {
     position: relative;
-    top: 15em;
+    top: 10em;
     background: transparent linear-gradient(270deg, #FF4500 0%, #FF6A32, #FF7C4C 100%) 0% 0% no-repeat padding-box; 
     max-width: 33em;
     max-height: 25em;
     opacity: 1;
     padding: .5em;
-    
+    border-radius: 7px;
 }
 
 .modal--background-violet {
     color: var(--violet);
+}
+
+.modal__close {
+    font-size: 2rem;
+    transform: rotate(45deg);
+    position: relative;
+    left: -9em;
+    cursor: pointer;
 }
 
 button {
@@ -93,10 +100,40 @@ button {
     border-radius: 7px;
     color: var(--darkGrey);
     font-family: inherit;
+    cursor: pointer;
 }
 input {
     text-align: center;
     font-family: inherit;
     border-radius: 7px;
     margin-bottom: 1.5em;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width: 700px) {
+    .container {
+        margin: 0 auto;
+    }
+    .timer__header {
+        max-width: 50em;
+        max-height: 30em;
+        margin: 10em 25em 0 25em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    .timer__body {
+        font-size: 3rem;
+    }
+
+    .modal--background {
+        margin: 2.5em 25em 0 25em;
+        max-width: 50em;
+        max-height: 30em;
+    }
 }
