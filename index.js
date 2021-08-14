@@ -9,6 +9,7 @@ const dayContainer = document.querySelector(".timer__item--day");
 const hourContainer = document.querySelector(".timer__item--hour");
 const minContainer = document.querySelector(".timer__item--min");
 const secContainer = document.querySelector(".timer__item--sec");
+const modal = document.querySelector(".modal");
 
 //test area
 
@@ -19,6 +20,7 @@ header.addEventListener('mouseover', function(e) {
    titles.forEach(title => {
        title.style.color = "var(--drkGreen)";
        title.style.textShadow = "2px 4px 4px rgba(10, 247, 2, 0.7)";
+       header.style.textShadow = "2px 4px 4px rgba(10, 247, 2, 0.7)";
        title.style.transition = "all 1s ease-in-out";
    })
    
@@ -28,6 +30,7 @@ header.addEventListener('mouseout', function(e) {
     titles.forEach(title => {
         title.style.color = "orangered";
         title.style.textShadow = "2px 4px 4px rgba(245, 153, 78, 0.7)";
+        header.style.textShadow = "2px 4px 4px rgba(245, 153, 78, 0.7)";
         title.style.transition = "all 1s ease-in-out";
     })
 })
@@ -59,3 +62,10 @@ const endDate = new Date("September 15, 2021 08:00:00");
 console.log(endDate);
 console.log(grandOpeningCounter(startDate, endDate));
 
+//make the modal pop up after 8 seconds 
+
+setInterval(popModal, 3000); 
+
+function popModal() {
+    modal.classList.remove("hidden");
+}

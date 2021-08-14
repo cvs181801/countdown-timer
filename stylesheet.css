@@ -39,13 +39,6 @@ h1 {
     text-shadow: 2px 4px 4px rgba(245, 153, 78, 0.7)
 }
 
-.timer__header:hover,
-.timer__header:focus {
-    color: var(--drkGreen);
-    text-shadow: 2px 4px 4px rgba(10, 247, 2, 0.7);
-    transition: all 1s ease-in-out;
-}
-
 .timer__body {
     display: flex;
     align-items: center;
@@ -83,7 +76,7 @@ h1 {
 .modal--background {
     position: relative;
     top: 15em;
-    background: transparent linear-gradient(270deg, #FF713B 0%, #FF895D, #FFA51D 100%) 0% 0% no-repeat padding-box; 
+    background: transparent linear-gradient(270deg, #FF4500 0%, #FF6A32, #FF7C4C 100%) 0% 0% no-repeat padding-box; 
     max-width: 33em;
     max-height: 25em;
     opacity: 1;
