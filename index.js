@@ -10,6 +10,7 @@ const hourContainer = document.querySelector(".timer__item--hour");
 const minContainer = document.querySelector(".timer__item--min");
 const secContainer = document.querySelector(".timer__item--sec");
 const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".modal__close");
 
 //test area
 
@@ -68,4 +69,13 @@ setInterval(popModal, 3000);
 
 function popModal() {
     modal.classList.remove("hidden");
+    
 }
+
+//add a way to close modal
+closeModal.addEventListener('click', function(e) {
+    modal.classList.add("hidden");
+    
+})
+
+
