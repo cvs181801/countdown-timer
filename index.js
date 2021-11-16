@@ -60,7 +60,7 @@ function grandOpeningCounter(start, end) {
 
 const startDate = new Date();
 console.log(new Date());
-const endDate = new Date("September 15, 2021 08:00:00");
+const endDate = new Date("March 15, 2022 08:00:00");
 console.log(endDate);
 console.log(grandOpeningCounter(startDate, endDate));
 
