@@ -13,7 +13,8 @@ const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".modal__close");
 
 //test area
-
+const contents = header.innerHTML;
+console.log(contents);
 
 //make the colors on the header change upon mouse in and out!
 header.addEventListener('mouseover', function(e) {
@@ -54,7 +55,7 @@ function grandOpeningCounter(start, end) {
     minContainer.append(minuteItem);
     secondItem.textContent = `${seconds}`;
     secContainer.append(secondItem);
-    //return `${days} : ${hours} : ${minutes} : ${seconds}`;
+    return `${days} : ${hours} : ${minutes} : ${seconds}`;
 }
 
 const startDate = new Date();
@@ -65,7 +66,7 @@ console.log(grandOpeningCounter(startDate, endDate));
 
 //make the modal pop up after 8 seconds 
 
-setInterval(popModal, 3000); 
+const modalGo = setInterval(popModal, 3000); 
 
 function popModal() {
     modal.classList.remove("hidden");
@@ -75,7 +76,7 @@ function popModal() {
 //add a way to close modal
 closeModal.addEventListener('click', function(e) {
     modal.classList.add("hidden");
-    
+    clearInterval(modalGo);
 })
 
 
