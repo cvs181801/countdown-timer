@@ -37,6 +37,7 @@ header.addEventListener('mouseout', function(e) {
     })
 })
 
+setInterval(function() {
 //make the countdown timer work
 function grandOpeningCounter(start, end) {
     let millisecs = Math.floor (end - start);
@@ -63,6 +64,7 @@ console.log(new Date());
 const endDate = new Date("March 15, 2022 08:00:00");
 console.log(endDate);
 console.log(grandOpeningCounter(startDate, endDate));
+}, 1000);
 
 //make the modal pop up after 8 seconds 
 
@@ -78,5 +80,6 @@ closeModal.addEventListener('click', function(e) {
     modal.classList.add("hidden");
     clearInterval(modalGo);
 })
+
 
 
